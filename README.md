@@ -46,15 +46,37 @@ Eine lebendige, spielergetriebene Stadtökonomie mit echten Lieferketten, Behör
 * Transparente Regeln und durchsetzbare, eskalierende Maßnahmen.
 * Events, Saisons, städtische Kampagnen (z. B. Sommerfest: höhere Nachfrage für bestimmte Waren).
 
+---
+
+## Erweiterungen für Creator & Community
+
+### Streamer-Spotlight (Twitch)
+
+Der Kanal **xdr_bobx** hostet das **THC Legacy RP Streamer-Spotlight**: kurze Talks, Highlight-Reels und Mini-Sessions mit Creator:innen aus der Stadt. Fokus auf **Kultur statt Clickbait** — mit klarer Anti-Toxik-Linie (Parasozial-/Beziehungsdramen → Permabann gemäß Chat-Regeln).
+
+### Zukunftsmodul: "Legacy Motors" – Twitch Autohaus (P2W-frei)
+
+**Optionales** Community-Feature: Zuschauer sammeln **Legacy‑Coins ✦** (Channel Points) im Stream und können **ausgewählte** Fahrzeuge **auch** damit einlösen. **Alle** Fahrzeuge bleiben **immer** regulär für **IC** kaufbar.
+
+**Fairness-Garantie:** Kein LC↔IC-Tausch, keine exklusiven Vorteile, die es IC nicht gibt.
+
+**Richtwert-Formel (experimentell):** LC ≈ `ceil(IC/25)`, auf nächste **50** aufrunden, **min. 100 LC**.
+**Beispiele:** Roller **600 IC → 100 LC** (Minimum) • coquette3 **28.000 IC → 1.200 LC**.
+**Limits (geplant):** max. **1 Fahrzeug / 14 Tage** pro Twitch-Account, Wertdeckel **30.000 IC / 30 Tage**, Verknüpfung **Twitch ↔ Discord ↔ Ingame-ID**.
+
+> Status: Idee ist festgehalten und wird später gemeinsam umgesetzt, sobald die Kernsysteme stehen.
+
+---
+
 ## Architektur (Kurzüberblick)
 
 Modulare Ressourcen mit klaren Schnittstellen. Beispiele für geplante Module:
 
-* Ökonomie: thc-econ-core, thc-wholesale, thc-farming, thc-butchery, thc-import-export, thc-shops, thc-logistics
-* Governance: thc-gov-core, thc-health, thc-customs, thc-tax, thc-court, thc-law
-* Gameplay/Quality-of-Life: Fahrzeug- und Tuning-Module, Admin-/Inspektions-Tools
+* **Ökonomie:** `thc-econ-core`, `thc-wholesale`, `thc-farming`, `thc-butchery`, `thc-import-export`, `thc-shops`, `thc-logistics`
+* **Governance:** `thc-gov-core`, `thc-health`, `thc-customs`, `thc-tax`, `thc-court`, `thc-law`
+* **Gameplay/Quality-of-Life:** Fahrzeug- und Tuning-Module, Admin-/Inspektions-Tools
 
-Inventar- und Framework-Adapter für QBCore und/oder ox ecosytem. Serverseitige Validierung, Rate-Limits, Audit-Logs.
+Inventar- und Framework-Adapter für QBCore und/oder ox-ecosystem. Serverseitige Validierung, Rate-Limits, Audit-Logs.
 
 ## Roadmap (High Level)
 
@@ -70,12 +92,12 @@ Ein detaillierteres, lebendes Board (Issues/Milestones) folgt im Repository.
 
 Wir suchen Menschen, die Lust haben, eine langlebige RP-Ökonomie zu bauen:
 
-* Gameplay- und Systems-Designerinnen und -Designer
-* Lua-/JS-Entwicklerinnen und -Entwickler (FiveM, NUI)
+* Gameplay- und Systems-Designer:innen
+* Lua-/JS-Entwickler:innen (FiveM, NUI)
 * UI/UX, Technical Writers, Test & QA
 * Community-Moderation und Event-Hosts
 
-Wie du startest:
+**Wie du startest:**
 
 1. Repository beobachten und Diskussionen verfolgen.
 2. Themen in Issues aufgreifen oder neue Vorschläge einreichen.
@@ -92,7 +114,7 @@ Wie du startest:
 
 * Inoffizielles Fanprojekt; alle Marken und Inhalte gehören ihren jeweiligen Rechteinhabern.
 * Kein kommerzieller Vertrieb des Basisspiels oder seiner Assets.
-* Besonderer Dank an Steve und alle, die seit 2008 diese Reise möglich machen.
+* Besonderer Dank an **Steve** und alle, die seit 2008 diese Reise möglich machen.
 
 ## Lizenz
 
