@@ -70,21 +70,27 @@ Der Kanal **xdr_bobx** hostet das **THC Legacy RP Streamer-Spotlight**: kurze Ta
 
 ## Architektur (Kurzüberblick)
 
-Modulare Ressourcen mit klaren Schnittstellen. Beispiele für geplante Module:
+**Modulare Ressourcen mit klaren Schnittstellen.** Beispiele für geplante Module:
 
-* **Ökonomie:** `thc-econ-core`, `thc-wholesale`, `thc-farming`, `thc-butchery`, `thc-import-export`, `thc-shops`, `thc-logistics`
-* **Governance:** `thc-gov-core`, `thc-health`, `thc-customs`, `thc-tax`, `thc-court`, `thc-law`
-* **Gameplay/Quality-of-Life:** Fahrzeug- und Tuning-Module, Admin-/Inspektions-Tools
+- **Ökonomie:** `thc-econ-core`, `thc-wholesale`, `thc-farming`, `thc-butchery`, `thc-import-export`, `thc-shops`, `thc-logistics`
+- **Governance & Recht:** `thc-gov-core`, `thc-health` (Gesundheitsamt), `thc-customs` (Zoll), `thc-tax` (Steuer), `thc-court` (Gerichte), `thc-law` (Anwälte), `thc-prison`
+- **Regelwerk & Onboarding:** `thc-rules-core` (Hardcore-RP-Regeln), `thc-beginner-district` (eigener Stadtteil zur Eingewöhnung), `thc-rules-nui` (ingame Lesbarkeit/Quiz)
+- **LegacyOS (Operations & Self-Service):** `thc-legacyos` (Webpanel: RBAC, Tickets, Einsätze, Register), `thc-legacyos-academy`, `thc-legacyos-ledger`
+- **Gameplay / QoL:** `thc-vehicles`, `thc-tuning`, `thc-admin-tools`, `thc-inspector`, `thc-telemetry`
+- **Progression:** `thc-xp` (XP/Level für QBCore), `thc-driver-license` (Führerschein & Punkte, Caps/Entzug), `thc-perks`
+- **Crime & Balance:** `thc-crime-core`, `thc-heists`, `thc-fencing` (Hehler), `thc-police-tools` (Beweise/Forensik)
+- **Adapter & Safety:** Inventar-/Framework-Adapter für QBCore und/oder ox-ecosystem, serverseitige Validierung, Rate-Limits, Audit-Logs, Anti-Cheat-Hooks
 
-Inventar- und Framework-Adapter für QBCore und/oder ox-ecosystem. Serverseitige Validierung, Rate-Limits, Audit-Logs.
+---
 
 ## Roadmap (High Level)
 
-* **2025 Q4–2026 H1**: Core-Design, Prototypen für Ökonomie und Gesundheitsamt, interne Tests.
-* **2026 H2–2027 H1**: Großmarkt, Farming/Butchery MVP, Shops mit Produktion und POS, erste Logistik-Schleife.
-* **2027 H2**: Governance-Vertiefung (Zoll, Steuer, Court/Law), Balancing-Pässe, öffentliche Tech-Preview.
-* **2028 H1**: Beta mit Content-Breadth, Performance-Optimierung, Polishing, Dokumentation.
-* **Release 16.07.2028**: v1.0 – Stable.
+- **2025 Q4 – 2026 H1:** Core-Design, Prototypen für Ökonomie & Gesundheitsamt, interne Tests; LegacyOS Grundgerüst (RBAC, Tickets).
+- **2026 H2 – 2027 H1:** Großmarkt, Farming/Butchery-MVP, Shops mit Produktion & POS, erste Logistik-Loops; LegacyOS Register & Academy Alpha.
+- **2027 H2:** Governance-Vertiefung (Zoll, Steuer, Court/Law), Balancing-Pässe; öffentliche Tech-Preview; XP/Level-Integration (`thc-xp`) als Opt-In.
+- **2028 Q1:** Finalisierung **Hardcore-RP-Regeln** (`thc-rules-core`) & **Anfänger-Stadtteil** (`thc-beginner-district`), Führerschein/Punkte-Rework; LegacyOS Beta.
+- **2028 H1:** Breite Content-Beta, Performance-Optimierung, Polishing, Dokumentation.
+- **Release 16.07.2028:** **v1.0 – Stable**.
 
 Ein detaillierteres, lebendes Board (Issues/Milestones) folgt im Repository.
 
@@ -125,6 +131,9 @@ Wird vor der ersten öffentlichen Beta festgelegt (Open-Source-orientiert). Vors
 * Discord: folgt
 * Dev-Updates: Repo-Issues und Discussions
 
+## Infrastruktur & Betrieb
+
+**Aktueller Primär-Server:** AMD Ryzen™ 9 7950X3D (16C/32T), 128 GB ECC DDR5, 2× 1.92 TB NVMe, Standort: Falkenstein (DE)
 ---
 
 **Kurzfassung:** THC Legacy RP vereint tiefe, faire Ökonomie mit echten Behörden- und Justizsystemen, moderner Fahrzeugtechnik und einer Community, die gemeinsam baut — als Tribut an die Anfänge und an Steve. Release-Ziel: 16.07.2028. Sei dabei.
