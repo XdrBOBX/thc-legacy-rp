@@ -128,3 +128,6 @@ Wird vor der ersten öffentlichen Beta festgelegt (Open-Source-orientiert). Vors
 ---
 
 **Kurzfassung:** THC Legacy RP vereint tiefe, faire Ökonomie mit echten Behörden- und Justizsystemen, moderner Fahrzeugtechnik und einer Community, die gemeinsam baut — als Tribut an die Anfänge und an Steve. Release-Ziel: 16.07.2028. Sei dabei.
+
+Credit: Modernes XP-/Level-System für QBCore von RAzZ14 – https://github.com/RAzZ14
+ – verwendet mit Dank & Respekt.
