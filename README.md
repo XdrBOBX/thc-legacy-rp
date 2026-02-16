@@ -1,34 +1,33 @@
 # THC Legacy RP — A Tribute to Steve
 
-**Release-Ziel:** 16.07.2028 • **Status:** In aktiver Entwicklung • **Plattform:** FiveM (GTA V)
+**Release-Ziel:** 16.07.2028 • **Status:** In aktiver Entwicklung • **Plattform:** MTA (GTA SA)
 
 ## Warum dieses Projekt existiert
 
-THC Legacy RP ist eine Liebeserklärung an die frühe Multiplayer-Ära und an Steve, dessen Begeisterung und Anspruch uns seit 2008 prägen. Wir bauen eine moderne Roleplay-Experience, die Technik, Wirtschaft und faires Miteinander vereint — mit derselben Liebe zum Detail, die damals den größten Server der Szene möglich machte.
+THC Legacy RP ist eine Liebeserklärung an die frühe Multiplayer-Ära und an Steve, dessen Begeisterung und Anspruch uns seit 2008 prägen. Wir bauen eine moderne Roleplay-Experience auf MTA, die Technik, Wirtschaft und faires Miteinander vereint — mit derselben Liebe zum Detail, die damals den größten Server der Szene möglich machte.
 
 ## THC Legacy – Historische Basis (2008–2017)
 
-Wir haben unsere alten THC-Dateien aus der MTA-Ära wiederentdeckt. Sie dienen heute als **kreative Vorlage**: Spielmechaniken, Balancing‑Ideen, Anticheat‑Ansätze und UI‑Konzepte. Alles wird **sauber für FiveM neu gedacht und umgesetzt** – rechtlich sauber, performancetauglich und modular.
+Wir haben unsere alten THC-Dateien aus der MTA-Ära wiederentdeckt. Sie dienen heute als **kreative Vorlage**: Spielmechaniken, Balancing-Ideen, Anticheat-Ansätze und UI-Konzepte. Alles wird **sauber für MTA neu gedacht und umgesetzt** – technisch modern, performancetauglich und modular.
 
 Eine lebendige, spielergetriebene Stadtökonomie mit echten Lieferketten, Behörden, Justiz und tiefer Fahrzeugsimulation — zugänglich, fair, langlebig und offen für Mitgestaltung.
 
-
-* **No Pay‑2‑Win:** Keine spielentscheidenden Vorteile gegen Geld; Progression & Balance bleiben fair.
+* **No Pay-2-Win:** Keine spielentscheidenden Vorteile gegen Geld; Progression & Balance bleiben fair.
   (Geplante Features)
 
 ### 1) Ökonomie & Lieferketten
 
-* Einzelbetriebe wie Restaurants, Schnellimbisse, Hot-Dog-Stände und mehr.
-* Großmarkt als Drehscheibe: Einkauf für Läden, Ankauf von Bauern und Fleischern.
-* Farming & Butchery: Felder, Ernte, Schlachtung, Verarbeitung zu Chargen mit Qualität und Frische.
-* Logistik: Kapazitäten, Kühlkette, Lieferaufträge, Schadens- und Qualitätsmodell.
-* Import/Export am Hafen: Getränke und Exoten mit Zoll, Lizenzen und Schiffszyklen.
+* Einzelbetriebe wie Restaurants, Schnellimbisse, Verkaufsstände und mehr.
+* Großmarkt als Drehscheibe: Einkauf für Läden, Ankauf von Produzenten.
+* Farming & Verarbeitung: Felder, Ernte, Verarbeitung zu Chargen mit Qualität und Frische.
+* Logistik: Kapazitäten, Lieferaufträge, Schadens- und Qualitätsmodell.
+* Hafen- & Importmechaniken: Waren mit Lizenzen, Kontrollen und Zyklen.
 
 ### 2) Behörden & Justiz (Governance-Layer)
 
 * Gesundheitsamt: Inspektionen, Hygienepunkte, Verwarnungen, Bußgelder, temporäre Schließungen.
-* Zoll: Container-Kanäle, Dokumentenprüfung, Abgaben, Beschlagnahme bei Falschangaben.
-* Steuerbehörde: Umsatzsteuer-Journal, Quartalsmeldung, Prüfungen, Bescheide.
+* Kontroll-/Zollmechaniken: Dokumentenprüfung, Abgaben, Beschlagnahme bei Verstößen.
+* Steuerbehörde: Umsatzjournal, Meldungen, Prüfungen, Bescheide.
 * Gerichte: Fälle, Beweise, Verhandlungen, Urteile mit automatisierten Folgen.
 * Anwälte/Kanzleien: Zulassung, Mandate, Honorare, Akteneinsicht.
 
@@ -44,25 +43,25 @@ Eine lebendige, spielergetriebene Stadtökonomie mit echten Lieferketten, Behör
 
 ## Welt & Karte
 
-* **Standardkarte (Los Santos & Blaine County):** bewusst gewählt für **Performance, Zugänglichkeit und Kompatibilität**.
-* **THC-Feeling Map:** Eigene Zonen, Events, Lieferketten, Routen und optional leichte MLO-Ergänzungen
-* **Anfänger‑Stadtteil:** Geschützter Bereich zum Einsteigen (Jobs, Regeln, Schulungen) – bleibt ein fester Bestandteil.
+* **Standardkarte (San Andreas):** bewusst gewählt für **Performance, Zugänglichkeit und Kompatibilität**.
+* **THC-Feeling Map:** Eigene Zonen, Events, Lieferketten, Routen und dezente strukturelle Ergänzungen.
+* **Anfänger-Stadtteil:** Geschützter Bereich zum Einsteigen (Jobs, Regeln, Schulungen) – bleibt ein fester Bestandteil.
 
 ## Architektur (Kurzüberblick)
 
 Modulare Ressourcen mit klaren Schnittstellen. Beispiele für geplante Module:
 
-* Ökonomie: thc-econ-core, thc-wholesale, thc-farming, thc-butchery, thc-import-export, thc-shops, thc-logistics
-* Governance: thc-gov-core, thc-health, thc-customs, thc-tax, thc-court, thc-law
+* Ökonomie: thc-econ-core, thc-wholesale, thc-farming, thc-production, thc-import, thc-shops, thc-logistics
+* Governance: thc-gov-core, thc-health, thc-control, thc-tax, thc-court, thc-law
 * Gameplay/Quality-of-Life: Fahrzeug- und Tuning-Module, Admin-/Inspektions-Tools
 
-Inventar- und Framework-Adapter für QBCore und/oder ox ecosytem. Serverseitige Validierung, Rate-Limits, Audit-Logs.
+Serverseitige Validierung, Rate-Limits, Audit-Logs.
 
 ## Roadmap (High Level)
 
 * **2025 Q4–2026 H1**: Core-Design, Prototypen für Ökonomie und Gesundheitsamt, interne Tests.
-* **2026 H2–2027 H1**: Großmarkt, Farming/Butchery MVP, Shops mit Produktion und POS, erste Logistik-Schleife.
-* **2027 H2**: Governance-Vertiefung (Zoll, Steuer, Court/Law), Balancing-Pässe, öffentliche Tech-Preview.
+* **2026 H2–2027 H1**: Großmarkt, Produktions-MVP, Shops mit POS, erste Logistik-Schleife.
+* **2027 H2**: Governance-Vertiefung (Kontrolle, Steuer, Court/Law), Balancing-Pässe, geschlossene Tech-Preview.
 * **2028 H1**: Beta mit Content-Breadth, Performance-Optimierung, Polishing, Dokumentation.
 * **Release 16.07.2028**: v1.0 – Stable.
 
@@ -70,10 +69,10 @@ Ein detaillierteres, lebendes Board (Issues/Milestones) folgt im Repository.
 
 ## Mitmachen (Call for Contributors)
 
-Wir suchen Menschen, die Lust haben, eine langlebige RP-Ökonomie zu bauen:
+Wir suchen Menschen, die Lust haben, eine langlebige RP-Ökonomie auf MTA zu bauen:
 
 * Gameplay- und Systems-Designerinnen und -Designer
-* Lua-/JS-Entwicklerinnen und -Entwickler (FiveM, NUI)
+* Lua-Entwicklerinnen und -Entwickler (MTA)
 * UI/UX, Technical Writers, Test & QA
 * Community-Moderation und Event-Hosts
 
